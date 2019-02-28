@@ -1,0 +1,309 @@
+/* Variables */
+/* General */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media (max-width: 600px) {
+    html {
+      font-size: 50%; } }
+
+body {
+  line-height: 1.6;
+  color: #242121; }
+
+/* Utility Classes */
+.container {
+  max-width: 110rem;
+  margin: 0 auto; }
+
+.btn {
+  text-decoration: none;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: inline-block;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all .3s linear;
+  outline: none; }
+
+#navbar {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #f2f3f2;
+  z-index: 10; }
+  @media (min-width: 768px) {
+    #navbar {
+      padding: 1rem 3rem; } }
+  #navbar .logo {
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-family: "Work Sans", sans-serif;
+    color: #c49a6c; }
+  #navbar .navlist {
+    list-style-type: none;
+    display: none; }
+    @media (min-width: 768px) {
+      #navbar .navlist {
+        display: flex; } }
+    #navbar .navlist li:not(:last-child) {
+      margin-right: 2rem; }
+    #navbar .navlist li a:link,
+    #navbar .navlist li a:visited {
+      text-decoration: none;
+      font-family: "Work Sans", sans-serif;
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #242121; }
+      #navbar .navlist li a:link:active, #navbar .navlist li a:link:hover,
+      #navbar .navlist li a:visited:active,
+      #navbar .navlist li a:visited:hover {
+        color: #c49a6c; }
+  #navbar .contact .contact-btn {
+    border: 5px solid #c49a6c;
+    background-color: #c49a6c;
+    color: #f2f3f2;
+    padding: 1rem;
+    width: 14.7rem; }
+    #navbar .contact .contact-btn:hover {
+      background-color: #f2f3f2;
+      color: #c49a6c; }
+
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background: url("../img/pexels-photo-1267847.jpeg") no-repeat center center/cover;
+  padding: 1rem;
+  position: relative; }
+  #header::before {
+    content: "";
+    background-color: rgba(36, 33, 33, 0.5);
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  @media (min-width: 768px) {
+    #header {
+      height: 100vh; } }
+  #header .heading {
+    text-align: center;
+    color: #f2f3f2;
+    z-index: 2; }
+    #header .heading h1 {
+      font-size: 6.4rem;
+      font-family: "Work Sans", sans-serif;
+      line-height: 7.2rem;
+      text-transform: uppercase; }
+      @media (max-width: 600px) {
+        #header .heading h1 {
+          font-size: 5rem; } }
+    #header .heading p {
+      margin-top: 2rem;
+      font-size: 2rem;
+      font-family: "Open Sans", sans-serif;
+      line-height: 3rem;
+      opacity: .7; }
+      @media (max-width: 600px) {
+        #header .heading p {
+          font-size: 1.8rem; } }
+
+#info {
+  padding: 5rem;
+  background-color: #e5e7e5; }
+  #info .info-text {
+    text-align: center;
+    padding: 0; }
+    @media (min-width: 1100px) {
+      #info .info-text {
+        padding: 4rem 18rem; } }
+    #info .info-text p {
+      font-family: "Bree Serif", serif;
+      font-size: 2.2rem;
+      line-height: 3.6rem;
+      color: #242121; }
+    #info .info-text .icon {
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #info .info-text .icon .lighthouse-icon {
+        width: 10rem;
+        height: 10rem; }
+
+#services {
+  padding: 5rem; }
+  @media (min-width: 1110px) {
+    #services {
+      padding: 10rem; } }
+  #services .heading {
+    text-transform: uppercase;
+    color: #242121;
+    text-align: center;
+    margin-bottom: 5rem; }
+    #services .heading h3 {
+      font-size: 4.2rem;
+      line-height: 4.8rem;
+      font-weight: 800;
+      font-family: "Work Sans", sans-serif; }
+      #services .heading h3 .heading-opaque {
+        font-size: 2rem;
+        line-height: 2rem;
+        font-family: "Bree Serif", serif;
+        opacity: 0.6;
+        display: block;
+        padding: 1rem; }
+  #services .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 5rem; }
+    @media (min-width: 768px) {
+      #services .grid-container {
+        grid-template-columns: repeat(3, 1fr); } }
+    #services .grid-container figure img {
+      width: 100%;
+      min-height: 100%; }
+    #services .grid-container figure figcaption {
+      text-align: center;
+      padding: 2rem;
+      display: grid;
+      grid-gap: 2rem; }
+      #services .grid-container figure figcaption h4 {
+        font-size: 2.2rem;
+        line-height: 3.4rem;
+        font-family: "Work Sans", sans-serif;
+        text-transform: uppercase; }
+      #services .grid-container figure figcaption p {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        font-family: "Open Sans", sans-serif;
+        opacity: .8; }
+
+#branches {
+  position: relative;
+  padding: 5rem; }
+  #branches::before {
+    content: "";
+    width: 100%;
+    height: 50vh;
+    background: url("../img/hero-img.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; }
+  #branches .heading {
+    text-transform: uppercase;
+    color: #f2f3f2;
+    text-align: center;
+    margin-bottom: 10rem; }
+    #branches .heading h3 {
+      font-size: 4.2rem;
+      line-height: 4.8rem;
+      font-weight: 800;
+      font-family: "Work Sans", sans-serif; }
+      #branches .heading h3 .heading-opaque {
+        font-size: 2rem;
+        line-height: 2rem;
+        font-family: "Bree Serif", serif;
+        opacity: 0.8;
+        display: block;
+        padding: 1rem; }
+  #branches .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5rem; }
+    @media (min-width: 768px) {
+      #branches .grid-container {
+        grid-template-columns: repeat(2, 1fr); } }
+    #branches .grid-container figure img {
+      width: 100%;
+      min-height: 100%; }
+    #branches .grid-container figure figcaption {
+      background-color: #242121;
+      padding: 2rem;
+      display: grid;
+      grid-gap: 2rem;
+      text-align: left; }
+      #branches .grid-container figure figcaption h4 {
+        font-size: 3rem;
+        line-height: 3rem;
+        font-family: "Work Sans", sans-serif;
+        color: #c49a6c;
+        text-transform: uppercase; }
+      #branches .grid-container figure figcaption p {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        font-family: "Open Sans", sans-serif;
+        color: #f2f3f2; }
+
+#team {
+  padding: 5rem; }
+  @media (min-width: 1100px) {
+    #team {
+      padding: 10rem; } }
+  #team .heading {
+    text-transform: uppercase;
+    color: #242121;
+    text-align: center;
+    margin-bottom: 5rem; }
+    #team .heading h3 {
+      font-size: 4.2rem;
+      line-height: 4.8rem;
+      font-weight: 800;
+      font-family: "Work Sans", sans-serif; }
+      #team .heading h3 .heading-opaque {
+        font-size: 2rem;
+        line-height: 2rem;
+        font-family: "Bree Serif", serif;
+        opacity: 0.6;
+        display: block;
+        padding: 1rem; }
+  #team .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5rem; }
+    @media (min-width: 768px) {
+      #team .grid-container {
+        grid-template-columns: repeat(3, 1fr); } }
+    #team .grid-container figure img {
+      width: 100%;
+      min-height: 100%; }
+    #team .grid-container figure figcaption {
+      text-align: center; }
+      #team .grid-container figure figcaption h4 {
+        font-size: 2.4rem;
+        font-family: "Work Sans", sans-serif;
+        color: #2b3990; }
+      #team .grid-container figure figcaption h5 {
+        font-size: 2rem;
+        font-family: "Open Sans", sans-serif;
+        color: #374396;
+        opacity: .7;
+        margin-bottom: 1.5rem; }
+      #team .grid-container figure figcaption a:link,
+      #team .grid-container figure figcaption a:visited {
+        font-size: 2rem;
+        text-decoration: none;
+        color: #2b3990;
+        line-height: 2.6rem; }
+        #team .grid-container figure figcaption a:link:active, #team .grid-container figure figcaption a:link:hover,
+        #team .grid-container figure figcaption a:visited:active,
+        #team .grid-container figure figcaption a:visited:hover {
+          color: #5970af; }

@@ -1,0 +1,70 @@
+#services {
+  padding: 5rem;
+
+  @media (min-width: 1110px) {
+      padding: 10rem;
+  }
+
+  .heading {
+    text-transform: uppercase;
+    color: $color-text-dark;
+    text-align: center;
+    margin-bottom: 5rem;
+
+    h3 {
+      font-size: 4.2rem;
+      line-height: 4.8rem;
+      font-weight: 800;
+      font-family: $font-primary;
+
+      .heading-opaque {
+        font-size: 2rem;
+        line-height: 2rem;
+        font-family: $font-secondary;
+        opacity: 0.6;
+        display: block;
+        padding: 1rem;
+      }
+    }
+  }
+
+  .grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      grid-gap: 5rem;
+
+      @media (min-width: 768px) {
+          grid-template-columns: repeat(3, 1fr);
+      }
+
+    figure {
+
+      img {
+        width: 100%;
+        min-height: 100%;
+      }
+
+      figcaption {
+        text-align: center;
+        padding: 2rem;
+        display: grid;
+        grid-gap: 2rem;
+
+        h4 {
+          font-size: 2.2rem;
+          line-height: 3.4rem;
+          font-family: $font-primary;
+          text-transform: uppercase;
+        }
+
+        p {
+          font-size: 1.6rem;
+          line-height: 2.6rem;
+          font-family: $font-tertiary;
+          opacity: .8;
+        }
+      }
+    }
+  }
+}

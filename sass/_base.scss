@@ -1,0 +1,53 @@
+/* Variables */
+$font-primary: "Work Sans", sans-serif;
+$font-secondary: "Bree Serif", serif;
+$font-tertiary: "Open Sans", sans-serif;
+
+$color-primary: #374396;
+$color-primary-dark: #2b3990;
+$color-primary-light: #5970af;
+$color-accent: #c49a6c;
+$color-text-white: #f2f3f2;
+$color-text-dark: #242121;
+
+/* General */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media (max-width: 600px) {
+        font-size: 50%;
+    }
+}
+
+body {
+    line-height: 1.6;
+    color: $color-text-dark;
+}
+
+/* Utility Classes */
+.container {
+    max-width: 110rem;
+    margin: 0 auto;
+
+}
+
+.btn {
+    text-decoration: none;
+    font-family: $font-primary;
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: inline-block;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s linear;
+    outline: none;
+}
