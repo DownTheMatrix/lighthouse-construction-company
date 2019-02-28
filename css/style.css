@@ -293,16 +293,17 @@ body {
         color: #2b3990; }
       #team .grid-container figure figcaption h5 {
         font-size: 2rem;
-        font-family: "Open Sans", sans-serif;
+        font-family: "Bree Serif", serif;
         color: #374396;
         opacity: .7;
         margin-bottom: 1.5rem; }
       #team .grid-container figure figcaption a:link,
       #team .grid-container figure figcaption a:visited {
-        font-size: 2rem;
+        font-size: 1.8rem;
         text-decoration: none;
         color: #2b3990;
-        line-height: 2.6rem; }
+        line-height: 2.6rem;
+        font-family: "Open Sans", sans-serif; }
         #team .grid-container figure figcaption a:link:active, #team .grid-container figure figcaption a:link:hover,
         #team .grid-container figure figcaption a:visited:active,
         #team .grid-container figure figcaption a:visited:hover {
