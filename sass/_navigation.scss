@@ -18,7 +18,11 @@
         text-transform: capitalize;
         font-size: 2rem;
         font-family: $font-primary;
-        color: $color-accent;
+        color: $color-text-dark;
+
+        .hl {
+            color: $color-accent;
+        }
     }
 
     .navlist {
