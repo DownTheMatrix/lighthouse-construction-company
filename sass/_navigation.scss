@@ -15,14 +15,22 @@
     }
 
     .logo {
-        text-transform: capitalize;
         font-size: 2rem;
-        font-family: $font-primary;
-        color: $color-text-dark;
 
-        .hl {
-            color: $color-accent;
+       h1 {
+
+        a:link,
+        a:visited {
+            text-transform: capitalize;
+            font-family: $font-primary;
+            color: $color-text-dark;
+            text-decoration: none;
+
+            .hl {
+                color: $color-accent;
+            }
         }
+       }
     }
 
     .navlist {
