@@ -49,10 +49,16 @@ body {
     #navbar {
       padding: 1rem 3rem; } }
   #navbar .logo {
-    text-transform: capitalize;
-    font-size: 2rem;
-    font-family: "Work Sans", sans-serif;
-    color: #c49a6c; }
+    font-size: 2rem; }
+    #navbar .logo h1 a:link,
+    #navbar .logo h1 a:visited {
+      text-transform: capitalize;
+      font-family: "Work Sans", sans-serif;
+      color: #242121;
+      text-decoration: none; }
+      #navbar .logo h1 a:link .hl,
+      #navbar .logo h1 a:visited .hl {
+        color: #c49a6c; }
   #navbar .navlist {
     list-style-type: none;
     display: none; }
