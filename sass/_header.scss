@@ -3,13 +3,13 @@
     justify-content: center;
     align-items: center;
     height: 50vh;
-    background: url("../img/pexels-photo-1267847.jpeg") no-repeat center center/cover;
+    background: url("../img/hero-bg.jpeg") no-repeat center center/cover;
     padding: 1rem;
     position: relative;
 
     &::before {
         content: "";
-        background-color: rgba($color-text-dark, .5);
+        background-color: rgba($color-text-dark, .7);
         position: absolute;
         display: block;
         top: 0;
@@ -26,6 +26,8 @@
         text-align: center;
         color: $color-text-white;
         z-index: 2;
+        display: grid;
+        grid-gap: 3rem;
 
         h1 {
             font-size: 6.4rem;
@@ -40,13 +42,18 @@
 
         p {
             margin-top: 2rem;
-            font-size: 2rem;
+            font-size: 1.8rem;
             font-family: $font-tertiary;
             line-height: 3rem;
             opacity: .7;
+            max-width: 80vw;
+            margin: auto;
+            letter-spacing: .1rem;
 
-            @media (max-width: 600px) {
-                font-size: 1.8rem;
+            @media (min-width: 768px) {
+                max-width: 80%;
+                padding: 0 10rem;
+                font-size: 2rem;
             }
         }
     }

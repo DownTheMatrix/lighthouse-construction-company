@@ -26,7 +26,7 @@ const init = () => {
     requestAnimationFrame(loop);
   }
 
-  const homeLink = document.querySelector('a[href="#home"]');
+  const homeLink = document.querySelector('a[href="#header"]');
   const servicesLink = document.querySelector('a[href="#services"]');
   const branchesLink = document.querySelector('a[href="#branches"]');
   const teamLink = document.querySelector('a[href="#team"]');
@@ -37,6 +37,9 @@ const init = () => {
   branchesLink.addEventListener("click", () => smoothScroll("#branches", 1000));
   teamLink.addEventListener("click", () => smoothScroll("#team", 1000));
   contactLink.addEventListener("click", () => smoothScroll("#contact", 1000));
+
+  /* Lazy Loading Images */
+  
 };
 
 document.addEventListener("DOMContentLoaded", init);

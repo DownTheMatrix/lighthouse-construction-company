@@ -93,12 +93,12 @@ body {
   justify-content: center;
   align-items: center;
   height: 50vh;
-  background: url("../img/pexels-photo-1267847.jpeg") no-repeat center center/cover;
+  background: url("../img/hero-bg.jpeg") no-repeat center center/cover;
   padding: 1rem;
   position: relative; }
   #header::before {
     content: "";
-    background-color: rgba(36, 33, 33, 0.5);
+    background-color: rgba(36, 33, 33, 0.7);
     position: absolute;
     display: block;
     top: 0;
@@ -111,7 +111,9 @@ body {
   #header .heading {
     text-align: center;
     color: #f2f3f2;
-    z-index: 2; }
+    z-index: 2;
+    display: grid;
+    grid-gap: 3rem; }
     #header .heading h1 {
       font-size: 6.4rem;
       font-family: "Work Sans", sans-serif;
@@ -122,13 +124,18 @@ body {
           font-size: 5rem; } }
     #header .heading p {
       margin-top: 2rem;
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-family: "Open Sans", sans-serif;
       line-height: 3rem;
-      opacity: .7; }
-      @media (max-width: 600px) {
+      opacity: .7;
+      max-width: 80vw;
+      margin: auto;
+      letter-spacing: .1rem; }
+      @media (min-width: 768px) {
         #header .heading p {
-          font-size: 1.8rem; } }
+          max-width: 80%;
+          padding: 0 10rem;
+          font-size: 2rem; } }
 
 #info {
   padding: 5rem;
@@ -138,20 +145,26 @@ body {
     padding: 0; }
     @media (min-width: 1100px) {
       #info .info-text {
-        padding: 4rem 18rem; } }
+        padding: 3rem 18rem; } }
     #info .info-text p {
       font-family: "Bree Serif", serif;
       font-size: 2.2rem;
       line-height: 3.6rem;
-      color: #242121; }
+      color: #242121;
+      opacity: .8;
+      letter-spacing: .1rem; }
     #info .info-text .icon {
-      padding: 2rem;
+      padding-top: 10rem;
       display: flex;
       justify-content: center;
       align-items: center; }
-      #info .info-text .icon .lighthouse-icon {
-        width: 10rem;
-        height: 10rem; }
+      #info .info-text .icon img {
+        width: 100%;
+        height: 100%; }
+        @media (min-width: 768px) {
+          #info .info-text .icon img {
+            width: 50%;
+            height: 50%; } }
 
 #services {
   padding: 5rem; }
@@ -205,20 +218,10 @@ body {
 #branches {
   position: relative;
   padding: 5rem; }
-  #branches::before {
-    content: "";
-    width: 100%;
-    height: 50vh;
-    background: url("../img/branches.png") no-repeat center center/cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1; }
   #branches .heading {
     text-transform: uppercase;
-    color: #f2f3f2;
     text-align: center;
-    margin-bottom: 10rem; }
+    margin-bottom: 5rem; }
     #branches .heading h3 {
       font-size: 4.2rem;
       line-height: 4.8rem;
@@ -228,7 +231,7 @@ body {
         font-size: 2rem;
         line-height: 2rem;
         font-family: "Bree Serif", serif;
-        opacity: 0.8;
+        opacity: 0.6;
         display: block;
         padding: 1rem; }
   #branches .grid-container {
