@@ -37,6 +37,20 @@ body {
 .col-span {
   grid-column: 1 / -1; }
 
+.heading-wide {
+  letter-spacing: .5rem; }
+
+.hl {
+  color: #c49a6c; }
+
+.heading-opaque {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-family: "Bree Serif", serif;
+  opacity: 0.8;
+  display: block;
+  padding: 1rem; }
+
 #navbar {
   padding: 1.5rem;
   display: flex;
@@ -50,7 +64,7 @@ body {
   z-index: 10; }
   @media (min-width: 768px) {
     #navbar {
-      padding: 1rem 3rem; } }
+      padding: 2rem 3rem; } }
   #navbar .logo {
     font-size: 2rem; }
     #navbar .logo h1 a:link,
@@ -59,9 +73,6 @@ body {
       font-family: "Work Sans", sans-serif;
       color: #242121;
       text-decoration: none; }
-      #navbar .logo h1 a:link .hl,
-      #navbar .logo h1 a:visited .hl {
-        color: #c49a6c; }
   #navbar .navlist {
     list-style-type: none;
     display: none; }
@@ -82,14 +93,14 @@ body {
       #navbar .navlist li a:visited:hover {
         color: #c49a6c; }
   #navbar .contact .contact-btn {
-    border: 5px solid #c49a6c;
-    background-color: #c49a6c;
+    border: 5px solid #374396;
+    background-color: #374396;
     color: #f2f3f2;
     padding: 1rem;
     width: 14.7rem; }
     #navbar .contact .contact-btn:hover {
       background-color: #f2f3f2;
-      color: #c49a6c; }
+      color: #374396; }
 
 #header {
   display: flex;
@@ -184,13 +195,6 @@ body {
       line-height: 4.8rem;
       font-weight: 800;
       font-family: "Work Sans", sans-serif; }
-      #services .heading h3 .heading-opaque {
-        font-size: 2rem;
-        line-height: 2rem;
-        font-family: "Bree Serif", serif;
-        opacity: 0.6;
-        display: block;
-        padding: 1rem; }
   #services .grid-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -230,13 +234,6 @@ body {
       line-height: 4.8rem;
       font-weight: 800;
       font-family: "Work Sans", sans-serif; }
-      #branches .heading h3 .heading-opaque {
-        font-size: 2rem;
-        line-height: 2rem;
-        font-family: "Bree Serif", serif;
-        opacity: 0.6;
-        display: block;
-        padding: 1rem; }
   #branches .grid-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -281,13 +278,6 @@ body {
       line-height: 4.8rem;
       font-weight: 800;
       font-family: "Work Sans", sans-serif; }
-      #team .heading h3 .heading-opaque {
-        font-size: 2rem;
-        line-height: 2rem;
-        font-family: "Bree Serif", serif;
-        opacity: 0.6;
-        display: block;
-        padding: 1rem; }
   #team .grid-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -356,8 +346,13 @@ body {
         color: #f2f3f2; }
 
 .show {
-  visibility: visible;
+  display: block;
   opacity: 1;
+  transition: opacity .2s linear; }
+
+.hide {
+  display: none;
+  opacity: 0;
   transition: opacity .2s linear; }
 
 #modal-box {
@@ -378,13 +373,6 @@ body {
         line-height: 4.8rem;
         font-weight: 800;
         font-family: "Work Sans", sans-serif; }
-        #modal-box .modal-container .heading h3 .heading-opaque {
-          font-size: 2rem;
-          line-height: 2rem;
-          font-family: "Bree Serif", serif;
-          opacity: 0.6;
-          display: block;
-          padding: 1rem; }
     #modal-box .modal-container .contact-form {
       display: grid;
       grid-gap: 2rem;
@@ -414,17 +402,16 @@ body {
         margin: 0 auto 1rem 0;
         padding: 1.5rem 2rem;
         width: 100%;
-        border: 2px solid #f2f3f2;
+        border: 5px solid #f2f3f2;
         background-color: #f2f3f2;
         color: #374396;
         font-size: 1.6rem;
         font-family: "Work Sans", sans-serif;
+        font-weight: bold;
         text-transform: uppercase;
         margin: 1rem auto;
         transition: all .1s linear; }
-        @media (min-width: 1100px) {
-          #modal-box .modal-container .contact-form .form-group input[type=button].form-btn {
-            width: 50%; } }
         #modal-box .modal-container .contact-form .form-group input[type=button].form-btn:hover {
           background-color: #374396;
-          color: #f2f3f2; }
+          color: #f2f3f2;
+          cursor: pointer; }

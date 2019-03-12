@@ -54,3 +54,20 @@ body {
 .col-span {
     grid-column: 1 / -1;
 }
+
+.heading-wide {
+    letter-spacing: .5rem;
+}
+
+.hl {
+    color: $color-accent;
+}
+
+.heading-opaque {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-family: $font-secondary;
+    opacity: 0.8;
+    display: block;
+    padding: 1rem;
+}
