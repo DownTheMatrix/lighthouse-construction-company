@@ -1,0 +1,69 @@
+#footer {
+    width: 100%;
+    height: 100vh;
+
+  .wrapper {
+      background: url("../img/map.jpeg") no-repeat center center/cover;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .text {
+          color: $color-text-white; 
+          background-color: rgba($color-text-dark, .8);
+          text-align: center;
+          padding: 5rem;
+          border-radius: 1rem;
+
+        h5 {
+            font-size: 4.2rem;
+            font-family: $font-primary;
+        }
+
+        p {
+            font-size: 2.2rem;
+            font-family: $font-tertiary;
+        }
+
+        .social-wrapper {
+            display: flex;
+            justify-content: space-between;
+            padding: 3rem;
+
+            .social-icon {
+
+                i {
+                    font-size: 3rem;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    &.fb:hover {
+                        color: #3b5999;
+                    }
+
+                    &.tw:hover {
+                        color: #55acee;
+                    }
+
+                    &.inst:hover {
+                        color: #e4405f;
+                    }
+
+                    &.linkin:hover {
+                        color: #0077B5;
+                    }
+                }
+
+                &:not(:last-child) {
+                    margin-right: 3rem;
+                }
+            }
+        }
+      }
+  }
+}

@@ -51,6 +51,9 @@ body {
   display: block;
   padding: 1rem; }
 
+.body-overflow {
+  overflow: hidden; }
+
 #navbar {
   padding: 1.5rem;
   display: flex;
@@ -76,11 +79,11 @@ body {
   #navbar .navlist {
     list-style-type: none;
     display: none; }
-    @media (min-width: 768px) {
+    @media (min-width: 800px) {
       #navbar .navlist {
         display: flex; } }
     #navbar .navlist li:not(:last-child) {
-      margin-right: 2rem; }
+      margin-right: 3rem; }
     #navbar .navlist li a:link,
     #navbar .navlist li a:visited {
       text-decoration: none;
@@ -106,7 +109,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 100vh;
   background: url("../img/hero-bg.jpeg") no-repeat center center/cover;
   padding: 1rem;
   position: relative; }
@@ -119,9 +122,6 @@ body {
     left: 0;
     width: 100%;
     height: 100%; }
-  @media (min-width: 768px) {
-    #header {
-      height: 100vh; } }
   #header .heading {
     text-align: center;
     color: #f2f3f2;
@@ -135,7 +135,7 @@ body {
       text-transform: uppercase; }
       @media (max-width: 600px) {
         #header .heading h1 {
-          font-size: 5rem; } }
+          font-size: 4rem; } }
     #header .heading p {
       margin-top: 2rem;
       font-size: 1.8rem;
@@ -345,29 +345,91 @@ body {
       #cooperation .text a:visited:hover {
         color: #f2f3f2; }
 
-.show {
-  display: block;
-  opacity: 1;
-  transition: opacity .2s linear; }
-
-.hide {
-  display: none;
-  opacity: 0;
-  transition: opacity .2s linear; }
+#footer {
+  width: 100%;
+  height: 100vh; }
+  #footer .wrapper {
+    background: url("../img/map.jpeg") no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    #footer .wrapper .text {
+      color: #f2f3f2;
+      background-color: rgba(36, 33, 33, 0.8);
+      text-align: center;
+      padding: 5rem;
+      border-radius: 1rem; }
+      #footer .wrapper .text h5 {
+        font-size: 4.2rem;
+        font-family: "Work Sans", sans-serif; }
+      #footer .wrapper .text p {
+        font-size: 2.2rem;
+        font-family: "Open Sans", sans-serif; }
+      #footer .wrapper .text .social-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem; }
+        #footer .wrapper .text .social-wrapper .social-icon i {
+          font-size: 3rem; }
+          #footer .wrapper .text .social-wrapper .social-icon i:hover {
+            cursor: pointer; }
+          #footer .wrapper .text .social-wrapper .social-icon i.fb:hover {
+            color: #3b5999; }
+          #footer .wrapper .text .social-wrapper .social-icon i.tw:hover {
+            color: #55acee; }
+          #footer .wrapper .text .social-wrapper .social-icon i.inst:hover {
+            color: #e4405f; }
+          #footer .wrapper .text .social-wrapper .social-icon i.linkin:hover {
+            color: #0077B5; }
+        #footer .wrapper .text .social-wrapper .social-icon:not(:last-child) {
+          margin-right: 3rem; }
 
 #modal-box {
   display: flex;
   justify-content: center;
   padding: 5rem;
   background-color: #374396;
-  color: #f2f3f2; }
+  color: #f2f3f2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  /* Close Button */ }
+  #modal-box.modal-show {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .1s linear; }
+  #modal-box .icon {
+    position: absolute;
+    top: 5%;
+    right: 5%; }
+    #modal-box .icon .close-btn {
+      width: 3rem;
+      height: 3rem; }
+      #modal-box .icon .close-btn:hover {
+        cursor: pointer; }
+  #modal-box .scrollable {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    /* Hide the scrollbar in Google Chrome */ }
+    #modal-box .scrollable::-webkit-scrollbar {
+      display: none;
+      -ms-overflow-style: none; }
   #modal-box .modal-container {
-    width: 76rem;
+    max-width: 76rem;
     margin: 0 auto; }
     #modal-box .modal-container .heading {
       text-transform: uppercase;
       text-align: center;
-      margin-bottom: 5rem; }
+      margin: 5rem 0; }
       #modal-box .modal-container .heading h3 {
         font-size: 4.2rem;
         line-height: 4.8rem;
@@ -410,7 +472,7 @@ body {
         font-weight: bold;
         text-transform: uppercase;
         margin: 1rem auto;
-        transition: all .1s linear; }
+        transition: all 0.1s linear; }
         #modal-box .modal-container .contact-form .form-group input[type=button].form-btn:hover {
           background-color: #374396;
           color: #f2f3f2;

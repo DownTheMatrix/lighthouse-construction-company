@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 100vh;
     background: url("../img/hero-bg.jpeg") no-repeat center center/cover;
     padding: 1rem;
     position: relative;
@@ -18,9 +18,7 @@
         height: 100%;
     }
 
-    @media (min-width: 768px) {
-        height: 100vh;
-    }
+   
 
     .heading {
         text-align: center;
@@ -36,7 +34,7 @@
             text-transform: uppercase;
 
             @media (max-width: 600px) {
-                font-size: 5rem;
+                font-size: 4rem;
             }
         }
 
