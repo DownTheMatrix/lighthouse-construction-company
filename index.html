@@ -24,7 +24,7 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="contact">
-        <button class="btn contact-btn">Contact Us</button>
+        <button class="btn contact-btn modal-btn">Contact Us</button>
       </div>
     </nav>
 
@@ -198,17 +198,51 @@
     <section id="cooperation">
       <div class="text">
         <h3>Interested in joining our team?</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit atque ea fugit reprehenderit est ratione quidem omnis ducimus libero a.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita numquam qui adipisci?</p>
         <a href="#">info@smartedison.com</a>
       </div>
     </section>
 
     <!-- Contact -->
     <section id="contact">
-      
+      <div class="text">
+
+      </div>
     </section>
 
-    
+    <!-- Modal Box -->
+    <section id="modal-box">
+      <div class="modal-container">
+          <div class="heading">
+            <h3><span class="heading-opaque">SmartEdison</span>Contact Form</h3>
+          </div>
+          <form action="#" class="contact-form">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="company">Company *</label>
+              <input type="text" id="company" name="company" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone No.</label>
+              <input type="text" name="phone" id="phone">
+            </div>
+            <div class="form-group col-span">
+              <label for="message">Leave a message</label>
+              <textarea name="message" id="message"></textarea>
+            </div>
+            <div class="form-group submit-btn-container col-span">
+              <input type="button" class="form-btn" value="Contact Us">
+            </div>
+          </form>
+      </div>
+    </section>
 
     <script src="js/main.js"></script>
   </body>
