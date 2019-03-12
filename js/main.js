@@ -38,8 +38,12 @@ const init = () => {
   teamLink.addEventListener("click", () => smoothScroll("#team", 1000));
   contactLink.addEventListener("click", () => smoothScroll("#contact", 1000));
 
-  /* Lazy Loading Images */
-  
+  /* Toggle Modal Box */
+  const modalBtn = document.querySelector(".modal-btn");
+
+  modalBtn.addEventListener("click", () => {
+    
+  });
 };
 
 document.addEventListener("DOMContentLoaded", init);
