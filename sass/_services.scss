@@ -1,7 +1,7 @@
 #services {
   padding: 5rem;
 
-  @media (min-width: 1110px) {
+   @media (min-width: 1110px) {
       padding: 10rem;
   }
 
@@ -33,7 +33,7 @@
 
       img {
         width: 100%;
-        min-height: 100%;
+        height: auto;
       }
 
       figcaption {

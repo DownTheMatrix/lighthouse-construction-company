@@ -205,7 +205,7 @@ body {
         grid-template-columns: repeat(3, 1fr); } }
     #services .grid-container figure img {
       width: 100%;
-      min-height: 100%; }
+      height: auto; }
     #services .grid-container figure figcaption {
       text-align: center;
       padding: 2rem;
@@ -223,7 +223,6 @@ body {
         opacity: .8; }
 
 #branches {
-  position: relative;
   padding: 5rem; }
   #branches .heading {
     text-transform: uppercase;
@@ -243,8 +242,7 @@ body {
         grid-template-columns: repeat(2, 1fr); } }
     #branches .grid-container figure img {
       width: 100%;
-      min-height: 100%;
-      border-radius: .6rem; }
+      height: auto; }
     #branches .grid-container figure figcaption {
       background-color: #242121;
       padding: 2rem;
@@ -287,7 +285,7 @@ body {
         grid-template-columns: repeat(3, 1fr); } }
     #team .grid-container figure img {
       width: 100%;
-      min-height: 100%; }
+      height: auto; }
     #team .grid-container figure figcaption {
       text-align: center; }
       #team .grid-container figure figcaption h4 {

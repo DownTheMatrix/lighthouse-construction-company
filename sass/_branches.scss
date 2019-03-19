@@ -1,5 +1,4 @@
 #branches {
-    position: relative;
     padding: 5rem;
 
     .heading {
@@ -28,8 +27,7 @@
 
             img {
                 width: 100%;
-                min-height: 100%;
-                border-radius: .6rem;
+                height: auto;
             }
 
             figcaption {
