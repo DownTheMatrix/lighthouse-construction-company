@@ -10,10 +10,6 @@ To view the website simply download the repository as .zip file and open the `in
 
 Alternatively, you can view the live version [here](https://kind-mcnulty-b3ec30.netlify.com).
 
-### Known Issues
-
-At the moment the website displays well on Google Chrome and presents some major compatibility issues on Firefox. I'm working to add all the vendor prefixes to address and fix these problems at a general level before implementing more robust solutions.
-
 #### License
 
 Copyright 2019 Bruno Mazza
