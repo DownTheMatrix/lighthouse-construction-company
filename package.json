@@ -19,5 +19,8 @@
     "autoprefixer": "^9.5.0",
     "node-sass": "^4.11.0",
     "postcss-cli": "^6.1.2"
+  },
+  "dependencies": {
+    "js-yaml": "^3.13.1"
   }
 }
