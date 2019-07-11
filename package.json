@@ -21,6 +21,7 @@
     "postcss-cli": "^6.1.2"
   },
   "dependencies": {
-    "js-yaml": "^3.13.1"
+    "js-yaml": "^3.13.1",
+    "lodash.mergewith": "^4.6.2"
   }
 }
