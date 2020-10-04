@@ -26,6 +26,7 @@
     "lodash.mergewith": "^4.6.2",
     "minimist": "^1.2.5",
     "mixin-deep": "^2.0.1",
-    "set-value": "^3.0.1"
+    "set-value": "^3.0.1",
+    "yargs-parser": "^20.2.1"
   }
 }
